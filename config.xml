@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.cosoftstudios.UnitConverter" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>Unit-Converter</name>
+    <name>Basic Unit Converter</name>
     <platform name="android">
             <icon src="www/src/ic_launcher/mipmap-mdpi/ic_launcher.png" density="mdpi" />
             <icon src="www/src/ic_launcher/mipmap-hdpi/ic_launcher.png" density="hdpi" />
@@ -9,10 +9,10 @@
             <icon src="www/src/ic_launcher/mipmap-xxxhdpipi/ic_launcher.png" density="xxxhdpi" />
     </platform>
     <description>
-        A blank PhoneGap app.
+        A simple unit converting app.
     </description>
-    <author email="support@phonegap.com" href="http://phonegap.com">
-        PhoneGap Team
+    <author email="null" href="">
+        LucasGI
     </author>
     <content src="index.html" />
     <access origin="*" />
