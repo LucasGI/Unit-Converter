@@ -1,7 +1,4 @@
 //tmperature
-var c;
-var f;
-console.log($(".tmpType").val);
 function calTemp() {
     var n = document.getElementById("usrTemp").value;
     if (n.length < 1)
@@ -20,6 +17,7 @@ function calcTemp(a) {
     var temp4;
     var temp5;
     var temp6;
+    var b = parseFloat(a);
     if (document.getElementById('temp1').checked) {
         temp1 = true;
     } else {
@@ -58,12 +56,30 @@ function calcTemp(a) {
     console.log(temp6);
 // °
     if (temp1 === true && temp4 === true) {
-        document.getElementById("tmpVal").value = (a + "° F");
+        document.getElementById("tmpVal").value = (b + "° F");
     } else if (temp1 == true && temp5 == true) {
-        document.getElementById("tmpVal").value = ((a-32)*(5/9) + "° C");
+        document.getElementById("tmpVal").value = ((b-32)*(5/9) + "° C");
     } else if (temp1 == true && temp6 == true) {
-        document.getElementById("tmpVal").value = ((a + 459.67)*(5/9) + "° K");
+        document.getElementById("tmpVal").value = ((b + 459.67)*(5/9) + "° K");
+    } else if (temp2 == true && temp4 == true) {
+        document.getElementById("tmpVal").value = (((b*(5/9))+32) + "° F");
+    } else if (temp2 == true && temp5 == true) {
+        document.getElementById("tmpVal").value = (b + "° C");
+    } else if (temp2 == true && temp6 == true) {
+        document.getElementById("tmpVal").value = ((b + 273.15) + "° K");
+    } else if (temp3 == true && temp4 == true) {
+        document.getElementById("tmpVal").value = ((((9/5)*(b-273.15))+32)+"° F");
+    } else if (temp3 == true && temp5 == true) {
+        document.getElementById("tmpVal").value = ((b - 273.15) + "° C");
+    } else if (temp3 == true && temp5 == true) {
+        document.getElementById("tmpVal").value.value = (b + "° K");
+    } else if (temp1 == false && temp2 == false && temp3 == false && temp4 == false && temp5 == false && temp6 == false) {
+        Materialize.toast('You must choose a value to convert from and to first!', 2000, 'rounded') 
+        return false;
+    } else if ((temp1 == false && temp2 == false && temp3 == false)||(temp4 == false && temp5 == false && temp6 == false)) {
+        Materialize.toast('You must choose a value to convert from and to first!', 2000, 'rounded') 
+        return false;
+    } else {
+        console.log("Error: Unknown Error. app.js, calcTemp. End of IF.")
     }
-
 }
-console.log("nope")

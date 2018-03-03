@@ -37,7 +37,7 @@
             <hr>
             <br />
             <div class="row">
-                    <form class="row" action="#">
+                    <form class="row" action="#" id="tmpForm">
                     <div class="col s12">
                             
                             <div class="input-field col s6">
@@ -105,6 +105,9 @@
     $('select').material_select('destroy');
     $('#textarea1').val('New Text');
     $('#textarea1').trigger('autoresize');
+    $("#tmpForm").submit(function(e) {
+    e.preventDefault();
+});
 })
     </script>
 </html>
