@@ -62,7 +62,7 @@ function calcTemp(a) {
     } else if (temp1 == true && temp6 == true) {
         document.getElementById("tmpVal").value = ((b + 459.67)*(5/9) + "° K");
     } else if (temp2 == true && temp4 == true) {
-        document.getElementById("tmpVal").value = (((b*(5/9))+32) + "° F");
+        document.getElementById("tmpVal").value = (((b*(9/5))+32) + "° F");
     } else if (temp2 == true && temp5 == true) {
         document.getElementById("tmpVal").value = (b + "° C");
     } else if (temp2 == true && temp6 == true) {
