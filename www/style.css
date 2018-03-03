@@ -27,7 +27,7 @@ nav {
 .tmpType {
     background-color: black;
 }
-.tmpBtn {
+.tmpBtn .uiBtn{
     margin-top: 20px;
     color: black;
 }
