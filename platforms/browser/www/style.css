@@ -1,1 +1,8 @@
-.navPrivate
+.menuTitle {
+    color: black;
+}
+.licenseInfo {
+    border-top: 2px dotted;
+    color: #bdbdbd;
+    font-size: 80%;
+}
