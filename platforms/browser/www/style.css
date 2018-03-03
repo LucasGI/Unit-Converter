@@ -1,5 +1,9 @@
+body {
+    background-color: #bbdefb;
+}
 .menuTitle {
-    color: black;
+    color: White;
+    text-align: center;
 }
 .licenseInfo {
     border-top: 2px dotted;
@@ -8,4 +12,10 @@
 }
 .logo {
     font-size: 4vmax;
+}
+.cont {
+    margin: auto;
+    text-align: center;
+    align-content: center;
+    align-self: auto;
 }
