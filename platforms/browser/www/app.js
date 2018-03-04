@@ -11,27 +11,29 @@ function calUI() {
 function calcUI(a) {
     var val1 = document.getElementById("selectUI1").value;
     var val2 = document.getElementById("selectUI2").value;
+    var fixed;
+    parseFloat(fixed);
     var b = parseFloat(a);
     if (val1 == 0 || val2 == 0) {
         Materialize.toast("You Must Specify The Convert From AND Convert To!", 2000, 'rounded')
     } else if (val1 == 1 && val2 == 1) {
-        document.getElementById("uiVal").value = (b + " Bytes");
+        document.getElementById("uiVal").value = (toFixed(b) + " Bytes");
     } else if (val1 == 1 && val2 == 2) {
-        document.getElementById("uiVal").value = ((b/1000) + " Kilobytes");
+        document.getElementById("uiVal").value = (toFixed(b/1000) + " Kilobytes");
     } else if (val1 == 1 && val2 == 3) {
-        document.getElementById("uiVal").value = ((b/1000000) + " Megabytes");
+        document.getElementById("uiVal").value = (toFixed(b/1000000) + " Megabytes");
     } else if (val1 == 1 && val2 == 4) {
-        document.getElementById("uiVal").value = ((b/1000000000) + " Gigabytes");
+        document.getElementById("uiVal").value = (toFixed(b/1000000000) + " Gigabytes");
     } else if (val1 == 1 && val2 == 5) {
-        document.getElementById("uiVal").value = ((b/1000000000000) + " Terabytes");
+        document.getElementById("uiVal").value = (toFixed(b/1000000000000) + " Terabytes");
     } else if (val1 == 1 && val2 == 6) {
-        document.getElementById("uiVal").value = ((b/1000000000000000) + " Petabytes");
+        document.getElementById("uiVal").value = (toFixed(b/1000000000000000) + " Petabytes");
     } else if (val1 == 1 && val2 == 7) {
-        document.getElementById("uiVal").value = ((b/1000000000000000000) + " Exabytes");
+        document.getElementById("uiVal").value = (toFixed(b/1000000000000000000) + " Exabytes");
     } else if (val1 == 1 && val2 == 8) {
-        document.getElementById("uiVal").value = ((b/1000000000000000000000) + " Zettabytes");
+        document.getElementById("uiVal").value = (toFixed(b/1000000000000000000000) + " Zettabytes");
     } else if (val1 == 1 && val2 == 9) {
-        document.getElementById("uiVal").value = ((b/1000000000000000000000000) + " Yottabytes");
+        document.getElementById("uiVal").value = (toFixed(b/1000000000000000000000000) + " Yottabytes");
     }
 }
 
@@ -120,3 +122,20 @@ function calcTemp(a) {
         console.log("Error: Unknown Error. app.js, calcTemp. End of IF.")
     }
 }
+function toFixed(x) {
+    if (Math.abs(x) < 1.0) {
+      var e = parseInt(x.toString().split('e-')[1]);
+      if (e) {
+          x *= Math.pow(10,e-1);
+          x = '0.' + (new Array(e)).join('0') + x.toString().substring(2);
+      }
+    } else {
+      var e = parseInt(x.toString().split('+')[1]);
+      if (e > 20) {
+          e -= 20;
+          x /= Math.pow(10,e);
+          x += (new Array(e+1)).join('0');
+      }
+    }
+    return x;
+  }
