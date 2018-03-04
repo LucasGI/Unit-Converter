@@ -1,3 +1,41 @@
+//Information
+function calUI() {
+    var n = document.getElementById("usrUI").value;
+    if (n.length < 1) {
+        Materialize.toast("You Must Enter A Value First!", 2000, 'rounded')
+        return false;
+    } else {
+        calcUI(n);
+    }
+}
+function calcUI(a) {
+    var val1 = document.getElementById("selectUI1").value;
+    var val2 = document.getElementById("selectUI2").value;
+    var b = parseFloat(a);
+    if (val1 == 0 || val2 == 0) {
+        Materialize.toast("You Must Specify The Convert From AND Convert To!", 2000, 'rounded')
+    } else if (val1 == 1 && val2 == 1) {
+        document.getElementById("uiVal").value = (b + " Bytes");
+    } else if (val1 == 1 && val2 == 2) {
+        document.getElementById("uiVal").value = ((b/1000) + " Kilobytes");
+    } else if (val1 == 1 && val2 == 3) {
+        document.getElementById("uiVal").value = ((b/1000000) + " Megabytes");
+    } else if (val1 == 1 && val2 == 4) {
+        document.getElementById("uiVal").value = ((b/1000000000) + " Gigabytes");
+    } else if (val1 == 1 && val2 == 5) {
+        document.getElementById("uiVal").value = ((b/1000000000000) + " Terabytes");
+    } else if (val1 == 1 && val2 == 6) {
+        document.getElementById("uiVal").value = ((b/1000000000000000) + " Petabytes");
+    } else if (val1 == 1 && val2 == 7) {
+        document.getElementById("uiVal").value = ((b/1000000000000000000) + " Exabytes");
+    } else if (val1 == 1 && val2 == 8) {
+        document.getElementById("uiVal").value = ((b/1000000000000000000000) + " Zettabytes");
+    } else if (val1 == 1 && val2 == 9) {
+        document.getElementById("uiVal").value = ((b/1000000000000000000000000) + " Yottabytes");
+    }
+}
+
+
 //tmperature
 function calTemp() {
     var n = document.getElementById("usrTemp").value;
@@ -9,7 +47,6 @@ function calTemp() {
         calcTemp(n)
     }
 }
-
 function calcTemp(a) {
     var temp1;
     var temp2;

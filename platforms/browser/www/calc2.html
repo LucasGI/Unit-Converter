@@ -46,7 +46,7 @@
                 </div>
                 </div>
                 <div class="col s6 input-field">
-                        <select>
+                        <select id="selectUI1">
                                 <option value="0" disabled selected>Choose your option</option>
                                 <option value="1">Bytes</option>
                                 <option value="2">Kilobytes</option>
@@ -58,10 +58,10 @@
                                 <option value="8">Zettabytes</option>
                                 <option value="9">Yottabytes</option>
                               </select>
-                              <label>Materialize Select</label>
+                              <label>Convert From:</label>
                 </div>
                 <div class="col s6 input-field">
-                            <select>
+                            <select id="selectUI2">
                                     <option value="0" disabled selected>Choose your option</option>
                                     <option value="1">Bytes</option>
                                     <option value="2">Kilobytes</option>
@@ -73,15 +73,22 @@
                                     <option value="8">Zettabytes</option>
                                     <option value="9">Yottabytes</option>
                             </select>
-                                <label>Materialize Select</label>
+                                <label>Convert To:</label>
                 </div>
                 <div class="col uiBtn">
-                        <button class="btn waves-effect waves-light blue" type="submit" name="action" onclick="calcUI()">Submit
+                        <button class="btn waves-effect waves-light blue" type="submit" name="action" onclick="calUI()">Submit
                                 <i class="material-icons right">send</i>
                               </button>
                 </div>
                 </form>
             </div>
+            <div class="container col s5 tmpHr">
+                    <hr>
+                    <div class="input-field col s6">
+                            <input placeholder="" id="uiVal" type="text"  class="validate" readonly>
+                            <label for="usrTemp">Converted Unit:</label>
+                          </div>
+                </div>
         </div>
     </body>
     <script type="text/javascript" src="cordova.js"></script>
