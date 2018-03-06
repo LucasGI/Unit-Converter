@@ -142,8 +142,44 @@ function calcUI(a) {
         document.getElementById("uiVal").value = (toFixed(b/1000) + " Zettabytes");
     } else if (val1 == 7 && val2 == 9) {
         document.getElementById("uiVal").value = (toFixed(b/1000000) + " Yottabytes");
+    } else if (val1 == 8 && val2 == 1) {
+        document.getElementById("uiVal").value = (toFixed(b*1000000000000000000000) + " Bytes");
+    } else if (val1 == 8 && val2 == 2) {
+        document.getElementById("uiVal").value = (toFixed(b*1000000000000000000) + " Kilobytes");
+    } else if (val1 == 8 && val2 == 3) {
+        document.getElementById("uival").value = (toFixed(b*1000000000000000) + " Megabytes");
+    } else if (val1 == 8 && val2 == 4) {
+        document.getElementById("uiVal").value = (toFixed(b*1000000000000) + " Gigabytes");
+    } else if (val1 == 8 && val2 == 5) {
+        document.getElementById("uiVal").value = (toFixed(b*1000000000) + " Terabytes");
+    } else if (val1 == 8 && val2 == 6) {
+        document.getElementById("uiVal").value = (toFixed(b*1000000) + " Petabytes");
+    } else if (val1 == 8 && val2 == 7) {
+        document.getElementById("uiVal").value = (toFixed(b*1000) + " Exabytes");
+    } else if (val1 == 8 && val2 == 8) {
+        document.getElementById("uiVal").value = (toFixed(b) + " Zettabytes");
+    } else if (val1 == 8 && val2 == 9) {
+        document.getElementById("uiVal").value = (toFixed(b/1000) + " Yottabytes");
+    } else if (val1 == 9 && val2 == 1) {
+        document.getElementById("uiVal").value = (toFIxed(b*1000000000000000000000000) + " Bytes");
+    } else if (val1 == 9 && val2 == 2) {
+        document.getElementById("uiVal").value = (toFixed(b*1000000000000000000000) + " Kilobytes");
+    } else if (val1 == 9 && val2 == 3) {
+        document.getElementById("uiVal").value = (toFixed(b*1000000000000000000) + " Megabytes");
+    } else if (val1 == 9 && val2 == 4) {
+        document.getElementById("uiVal").value = (toFixed(b*1000000000000000) + " Gigabytes");
+    } else if (val1 == 9 && val2 == 5) {
+        document.getElementById("uiVal").value = (toFixed(b*1000000000000) + " Terabytes");
+    } else if (val1 == 9 && val2 == 6) {
+        document.getElementById("uiVal").value = (toFixed(b*1000000000) + " Petabytes");
+    } else if (val1 == 9 && val2 == 7) {
+        document.getElementById("uiVal").value = (toFixed(b*1000000) + " Exabytes");
+    } else if (val1 == 9 && val2 == 8) {
+        document.getElementById("uiVal").value = (toFixed(b*1000) + " Zettabytes");
+    } else if (val1 == 9 && val2 == 9) {
+        document.getElementById("uiVal").value = (toFixed(b) + " Yottabytes");
     }
-}
+ }
 
 
 //tmperature
