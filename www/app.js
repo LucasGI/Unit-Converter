@@ -404,5 +404,5 @@ function toFixed(x) {
   }
   //git
   function github() {
-    navigator.app.loadUrl("https://github.com/LucasGI", {openExternal : true});
+    cordova.InAppBrowser.open('https://github.com/LucasGI/Unit-Converter', '_system');
   }
