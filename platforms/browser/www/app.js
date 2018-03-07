@@ -405,4 +405,5 @@ function toFixed(x) {
   //git
   function github() {
     cordova.InAppBrowser.open('https://github.com/LucasGI/Unit-Converter', '_system');
+    phonegap.InAppBrowser.open('https://github.com/LucasGI/Unit-Converter', '_system');
   }
