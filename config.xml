@@ -6,7 +6,8 @@
             <icon src="www/src/ic_launcher/mipmap-hdpi/ic_launcher.png" density="hdpi" />
             <icon src="www/src/ic_launcher/mipmap-xhdpi/ic_launcher.png" density="xhdpi" />
             <icon src="www/src/ic_launcher/mipmap-xxhdpi/ic_launcher.png" density="xxhdpi" />
-            <icon src="www/src/ic_launcher/mipmap-xxxhdpipi/ic_launcher.png" density="xxxhdpi" />
+            <icon src="www/src/ic_launcher/mipmap-xxxhdpi/ic_launcher.png" density="xxxhdpi" />
+            <preference name="DisallowOverscroll" value="true"/>
     </platform>
     <description>
         A simple unit converting app.
