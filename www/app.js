@@ -291,7 +291,7 @@ function toFixed(x) {
         Materialize.toast('You Must Enter A Value First!', 2000, 'rounded') 
         return false;
     } else {
-        calcTemp(n)
+        calUD(n)
     }
   }
   function calUD(a) {
