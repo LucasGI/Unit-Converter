@@ -389,6 +389,14 @@ function toFixed(x) {
       } else if (var1 == 7 && var2 == 2) {
           document.getElementById("udVal").value = (toFixed(b*3280.8) + " Feet");
       } else if (var1 == 7 && var2 == 3) {
-          document.getElementById("udVal").value = (toFixed(b))
+          document.getElementById("udVal").value = (toFixed(b*1093.6) + " Yards");
+      } else if (var1 == 7 && var2 == 4) {
+          document.getElementById("udVal").value = (toFixed(b*0.62137) + " Miles");
+      } else if (var1 == 7 && var2 == 5) {
+          document.getElementById("udVal").value = (toFIxed(b*100000) + " Centimeters");
+      } else if (var1 == 7 && var2 == 6) {
+          document.getElementById("udVal").value = (toFixed(b*1000) + " Meters");
+      } else if (var1 == 7 && var2 == 7) {
+          document.getElementById("udVal").value = (toFixed(b) + " Kilometers");
       }
   }
