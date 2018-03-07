@@ -398,5 +398,7 @@ function toFixed(x) {
           document.getElementById("udVal").value = (toFixed(b*1000) + " Meters");
       } else if (var1 == 7 && var2 == 7) {
           document.getElementById("udVal").value = (toFixed(b) + " Kilometers");
+      } else {
+          console.log("Error: Unknown Error. Distance, calUD(), END OF IF.");
       }
   }
