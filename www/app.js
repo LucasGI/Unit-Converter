@@ -296,8 +296,8 @@ function toFixed(x) {
   }
   function calUD(a) {
       var b = pharseFloat(a);
-      var val1 = document.getElementById("selectUD1").value;
-      var val2 = document.getElementById("selectUD2").value;
+      var var1 = document.getElementById("selectUD1").value;
+      var var2 = document.getElementById("selectUD2").value;
       if (var1 == 0 || var2 == 0) {
         Materialize.toast("You Must Specify The Convert From AND Convert To!", 2000, 'rounded')
       } else if (var1 == 1 && var2 == 1) {
