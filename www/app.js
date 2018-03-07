@@ -402,3 +402,7 @@ function toFixed(x) {
           console.log("Error: Unknown Error. Distance, calUD(), END OF IF.");
       }
   }
+  //git
+  function github() {
+    navigator.app.loadUrl("https://github.com/LucasGI", {openExternal : true});
+  }
