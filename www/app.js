@@ -295,7 +295,7 @@ function toFixed(x) {
     }
   }
   function calUD(a) {
-      var b = pharseFloat(a);
+      var b = parseFloat(a);
       var var1 = document.getElementById("selectUD1").value;
       var var2 = document.getElementById("selectUD2").value;
       if (var1 == 0 || var2 == 0) {
