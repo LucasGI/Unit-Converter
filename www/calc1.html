@@ -16,14 +16,14 @@
                               <a href="#!" class="brand-logo"><h4 class="logo">Unit Converter</h4></a>
                               <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
                               <ul class="right hide-on-med-and-down">
-                                <li  class="active"><a href="calc1.html">Measurement</a></li>
+                                <li  class="active"><a href="calc1.html">Distance</a></li>
                                 <li><a href="calc2.html">Units of Information</a></li>
                                 <li><a href="calc3.html">Temperature</a></li>
                                 <li><a href="index.html">About</a></li>
                               </ul>
                               <ul class="side-nav blue lighten-1" id="mobile-demo">
                                 <li><h4 class="menuTitle">Choose a Calculator</h4></li>
-                                <li class="active"><a href="calc1.html">Measurement</a></li>
+                                <li class="active"><a href="calc1.html">Distance</a></li>
                                 <li><a href="calc2.html">Units of Information</a></li>
                                 <li><a href="calc3.html">Temperature</a></li>
                                 <li><a href="index.html">About</a></li>
@@ -33,8 +33,57 @@
                     </nav>
         <!--CONTENT!-->
         <div class="container cont">
-            <h4>Measurement Calculator</h4>
-        </div>
+            <h4>Units of Distance Calculator</h4>
+                        <!-- FORM START-->
+                        <div class="row">
+                            <form class="row" action="#" id="udForm">
+                        <div class="row s12">
+                        <div class="input-field col s6">
+                            <input id="usrUD" type="number" class="validate" step="any">
+                            <label for="usrUD">Enter Unit:</label>
+                        </div>
+                        </div>
+                        <div class="col s6 input-field">
+                                <select id="selectUD1">
+                                        <option value="0" disabled selected>Choose your option</option>
+                                        <option value="1">Inches</option>
+                                        <option value="2">Feet</option>
+                                        <option value="3">Yards</option>
+                                        <option value="4">Miles</option>
+                                        <option value="5">Centimeters</option>
+                                        <option value="6">Meters</option>
+                                        <option value="7">Kilometrs</option>
+                                      </select>
+                                      <label>Convert From:</label>
+                        </div>
+                        <div class="col s6 input-field">
+                                        <select id="selectUD1">
+                                            <option value="0" disabled selected>Choose your option</option>
+                                            <option value="1">Inches</option>
+                                            <option value="2">Feet</option>
+                                            <option value="3">Yards</option>
+                                            <option value="4">Miles</option>
+                                            <option value="5">Centimeters</option>
+                                            <option value="6">Meters</option>
+                                            <option value="7">Kilometrs</option>
+                                          </select>
+                                        <label>Convert To:</label>
+                        </div>
+                        <div class="col uiBtn">
+                                <button class="btn waves-effect waves-light blue" type="submit" name="action" onclick="calUI()">Submit
+                                        <i class="material-icons right">send</i>
+                                      </button>
+                        </div>
+                        </form>
+                    </div>
+                    <div class="container col s5 tmpHr">
+                            <hr>
+                            <div class="input-field col s6">
+                                    <input placeholder="" id="udVal" type="text"  class="validate" readonly>
+                                    <label for="usrTemp">Converted Unit:</label>
+                                  </div>
+                        </div>
+                </div>
     </body>
     <script type="text/javascript" src="cordova.js"></script>
     <script src="src/jquery/jquery-3.3.1.min.js"></script>
@@ -43,6 +92,12 @@
     <script>
     $( document ).ready(function(){
     $(".button-collapse").sideNav()
+    $("#udForm").submit(function(e) {
+    e.preventDefault();
+    });
+    $(document).ready(function() {
+    $('select').material_select();
+  });
 })
     </script>
 </html>
