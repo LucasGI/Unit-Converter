@@ -43,7 +43,7 @@ function calcUI(a) {
     } else if (val1 == 2 && val2 == 4) {
         document.getElementById("uiVal").value = (toFixed(b/1000000) + " Gigabytes");
     } else if (val1 == 2 && val2 == 5) {
-        document.getElementById("uiVal").value = (toFIxed(b/1000000000) + " Terabytes");
+        document.getElementById("uiVal").value = (toFixed(b/1000000000) + " Terabytes");
     } else if (val1 == 2 && val2 == 6) {
         document.getElementById("uiVal").value = (toFixed(b/1000000000000) + " Petabytes");
     } else if (val1 == 2 && val2 == 7) {
@@ -63,7 +63,7 @@ function calcUI(a) {
     } else if (val1 == 3 && val2 == 5) {
         document.getElementById("uiVal").value = (toFixed(b/1000000) + " Terabytes");
     } else if (val1 == 3 && val2 == 6) {
-        document.getElementById("uiVal").value = (toFIxed(b/1000000000) + " Petabytes");
+        document.getElementById("uiVal").value = (toFixed(b/1000000000) + " Petabytes");
     } else if (val1 == 3 && val2 == 7) {
         document.getElementById("uiVal").value = (toFixed(b/1000000000000) + " Exabytes");
     } else if (val1 == 3 && val2 == 8) {
@@ -87,7 +87,7 @@ function calcUI(a) {
     } else if (val1 == 4 && val2 == 8) {
         document.getElementById("uiVal").value = (toFixed(b/1000000000000) + " Zettabytes");
     } else if (val1 == 4 && val2 == 9) {
-        document.getElementById("uiVal").value = (toFixed(b/1000000000000) + " Yottabytes");
+        document.getElementById("uiVal").value = (toFixed(b/1000000000000000) + " Yottabytes");
     } else if (val1 == 5 && val2 == 1) {
         document.getElementById("uiVal").value = (toFixed(b*1000000000000) + " Bytes");
     } else if (val1 == 5 && val2 == 2) {
@@ -97,11 +97,11 @@ function calcUI(a) {
     } else if (val1 == 5 && val2 == 4) {
         document.getElementById("uiVal").value = (toFixed(b*1000) + " Gigabytes");
     } else if (val1 == 5 && val2 == 5) {
-        document.getElementById("uiVal").value = (toFIxed(b) + " Terabytes");
+        document.getElementById("uiVal").value = (toFixed(b) + " Terabytes");
     } else if (val1 == 5 && val2 == 6) {
         document.getElementById("uiVal").value = (toFixed(b/1000) + " Petabytes");
     } else if (val1 == 5 && val2 == 7) {
-        document.getElementById("uiVal").value = (toFIxed(b/1000000) + " Exabytes");
+        document.getElementById("uiVal").value = (toFixed(b/1000000) + " Exabytes");
     } else if (val1 == 5 && val2 == 8) {
         document.getElementById("uiVal").value = (toFixed(b/1000000000) + " Zettabytes");
     } else if (val1 == 5 && val2 == 9) {
@@ -147,7 +147,7 @@ function calcUI(a) {
     } else if (val1 == 8 && val2 == 2) {
         document.getElementById("uiVal").value = (toFixed(b*1000000000000000000) + " Kilobytes");
     } else if (val1 == 8 && val2 == 3) {
-        document.getElementById("uival").value = (toFixed(b*1000000000000000) + " Megabytes");
+        document.getElementById("uiVal").value = (toFixed(b*1000000000000000) + " Megabytes");
     } else if (val1 == 8 && val2 == 4) {
         document.getElementById("uiVal").value = (toFixed(b*1000000000000) + " Gigabytes");
     } else if (val1 == 8 && val2 == 5) {
@@ -161,7 +161,7 @@ function calcUI(a) {
     } else if (val1 == 8 && val2 == 9) {
         document.getElementById("uiVal").value = (toFixed(b/1000) + " Yottabytes");
     } else if (val1 == 9 && val2 == 1) {
-        document.getElementById("uiVal").value = (toFIxed(b*1000000000000000000000000) + " Bytes");
+        document.getElementById("uiVal").value = (toFixed(b*1000000000000000000000000) + " Bytes");
     } else if (val1 == 9 && val2 == 2) {
         document.getElementById("uiVal").value = (toFixed(b*1000000000000000000000) + " Kilobytes");
     } else if (val1 == 9 && val2 == 3) {
