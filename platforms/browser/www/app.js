@@ -43,7 +43,7 @@ function calcUI(a) {
     } else if (val1 == 2 && val2 == 4) {
         document.getElementById("uiVal").value = (toFixed(b/1000000) + " Gigabytes");
     } else if (val1 == 2 && val2 == 5) {
-        document.getElementById("uiVal").value = (toFIxed(b/1000000000) + " Terabytes");
+        document.getElementById("uiVal").value = (toFixed(b/1000000000) + " Terabytes");
     } else if (val1 == 2 && val2 == 6) {
         document.getElementById("uiVal").value = (toFixed(b/1000000000000) + " Petabytes");
     } else if (val1 == 2 && val2 == 7) {
@@ -63,7 +63,7 @@ function calcUI(a) {
     } else if (val1 == 3 && val2 == 5) {
         document.getElementById("uiVal").value = (toFixed(b/1000000) + " Terabytes");
     } else if (val1 == 3 && val2 == 6) {
-        document.getElementById("uiVal").value = (toFIxed(b/1000000000) + " Petabytes");
+        document.getElementById("uiVal").value = (toFixed(b/1000000000) + " Petabytes");
     } else if (val1 == 3 && val2 == 7) {
         document.getElementById("uiVal").value = (toFixed(b/1000000000000) + " Exabytes");
     } else if (val1 == 3 && val2 == 8) {
@@ -87,7 +87,7 @@ function calcUI(a) {
     } else if (val1 == 4 && val2 == 8) {
         document.getElementById("uiVal").value = (toFixed(b/1000000000000) + " Zettabytes");
     } else if (val1 == 4 && val2 == 9) {
-        document.getElementById("uiVal").value = (toFixed(b/1000000000000) + " Yottabytes");
+        document.getElementById("uiVal").value = (toFixed(b/1000000000000000) + " Yottabytes");
     } else if (val1 == 5 && val2 == 1) {
         document.getElementById("uiVal").value = (toFixed(b*1000000000000) + " Bytes");
     } else if (val1 == 5 && val2 == 2) {
@@ -97,11 +97,11 @@ function calcUI(a) {
     } else if (val1 == 5 && val2 == 4) {
         document.getElementById("uiVal").value = (toFixed(b*1000) + " Gigabytes");
     } else if (val1 == 5 && val2 == 5) {
-        document.getElementById("uiVal").value = (toFIxed(b) + " Terabytes");
+        document.getElementById("uiVal").value = (toFixed(b) + " Terabytes");
     } else if (val1 == 5 && val2 == 6) {
         document.getElementById("uiVal").value = (toFixed(b/1000) + " Petabytes");
     } else if (val1 == 5 && val2 == 7) {
-        document.getElementById("uiVal").value = (toFIxed(b/1000000) + " Exabytes");
+        document.getElementById("uiVal").value = (toFixed(b/1000000) + " Exabytes");
     } else if (val1 == 5 && val2 == 8) {
         document.getElementById("uiVal").value = (toFixed(b/1000000000) + " Zettabytes");
     } else if (val1 == 5 && val2 == 9) {
@@ -147,7 +147,7 @@ function calcUI(a) {
     } else if (val1 == 8 && val2 == 2) {
         document.getElementById("uiVal").value = (toFixed(b*1000000000000000000) + " Kilobytes");
     } else if (val1 == 8 && val2 == 3) {
-        document.getElementById("uival").value = (toFixed(b*1000000000000000) + " Megabytes");
+        document.getElementById("uiVal").value = (toFixed(b*1000000000000000) + " Megabytes");
     } else if (val1 == 8 && val2 == 4) {
         document.getElementById("uiVal").value = (toFixed(b*1000000000000) + " Gigabytes");
     } else if (val1 == 8 && val2 == 5) {
@@ -161,7 +161,7 @@ function calcUI(a) {
     } else if (val1 == 8 && val2 == 9) {
         document.getElementById("uiVal").value = (toFixed(b/1000) + " Yottabytes");
     } else if (val1 == 9 && val2 == 1) {
-        document.getElementById("uiVal").value = (toFIxed(b*1000000000000000000000000) + " Bytes");
+        document.getElementById("uiVal").value = (toFixed(b*1000000000000000000000000) + " Bytes");
     } else if (val1 == 9 && val2 == 2) {
         document.getElementById("uiVal").value = (toFixed(b*1000000000000000000000) + " Kilobytes");
     } else if (val1 == 9 && val2 == 3) {
@@ -303,7 +303,7 @@ function toFixed(x) {
       } else if (var1 == 1 && var2 == 1) {
           document.getElementById("udVal").value = (toFixed(b) + " Inches");
       } else if (var1 == 1 && var2 == 2) {
-          document.getElementById("udVal").value = (toFixed(b*0.083333) + " Feet");
+          document.getElementById("udVal").value = (toFixed(b/12) + " Feet");
       } else if (var1 == 1 && var2 == 3) {
           document.getElementById("udVal").value = (toFixed(b*0.027778) + " Yards")
       } else if (var1 == 1 && var2 == 4) {
@@ -319,7 +319,7 @@ function toFixed(x) {
       } else if (var1 == 2 && var2 == 2) {
           document.getElementById("udVal").value = (toFixed(b) + " Feet");
       } else if (var1 == 2 && var2 == 3) {
-          document.getElementById("udVal").value = (toFixed(b*0.33333) + " Yards");
+          document.getElementById("udVal").value = (toFixed(b*(1/3)) + " Yards");
       } else if (var1 == 2 && var2 == 4) {
           document.getElementById("udVal").value = (toFixed(b*0.00018939) + " Miles");
       } else if (var1 == 2 && var2 == 5) {
@@ -327,7 +327,7 @@ function toFixed(x) {
       } else if (var1 == 2 && var2 == 6) {
           document.getElementById("udVal").value = (toFixed(b/3.2808) + " Meters");
       } else if (var1 == 2 && var2 == 7) {
-          document.getElementById("udval").value = (toFixed(b/3280.8) + " Kilometers");
+          document.getElementById("udVal").value = (toFixed(b/3280.8) + " Kilometers");
       } else if (var1 == 3 && var2 == 1) {
           document.getElementById("udVal").value = (toFixed(b*36) + " Inches");
       } else if (var1 == 3 && var2 == 2) {
@@ -359,7 +359,7 @@ function toFixed(x) {
       } else if (var1 == 5 && var2 == 1) {
           document.getElementById("udVal").value = (toFixed(b*0.39370) + " Inches");
       } else if (var1 == 5 && var2 == 2) {
-          document.getElementById("udVal").value = (toFIxed(b*0.032808) + " Feet");
+          document.getElementById("udVal").value = (toFixed(b*0.032808) + " Feet");
       } else if (var1 == 5 && var2 == 3) {
           document.getElementById("udVal").value = (toFixed(b*0.010936) + " Yards");
       } else if (var1 == 5 && var2 == 4) {
@@ -387,13 +387,13 @@ function toFixed(x) {
       } else if (var1 == 7 && var2 == 1) {
           document.getElementById("udVal").value = (toFixed(b*39370) + " Inches");
       } else if (var1 == 7 && var2 == 2) {
-          document.getElementById("udVal").value = (toFixed(b*3280.8) + " Feet");
+          document.getElementById("udVal").value = (toFixed(b*3280.839895) + " Feet");
       } else if (var1 == 7 && var2 == 3) {
-          document.getElementById("udVal").value = (toFixed(b*1093.6) + " Yards");
+          document.getElementById("udVal").value = (toFixed(b*1093.61) + " Yards");
       } else if (var1 == 7 && var2 == 4) {
-          document.getElementById("udVal").value = (toFixed(b*0.62137) + " Miles");
+          document.getElementById("udVal").value = (toFixed(b*0.62137119) + " Miles");
       } else if (var1 == 7 && var2 == 5) {
-          document.getElementById("udVal").value = (toFIxed(b*100000) + " Centimeters");
+          document.getElementById("udVal").value = (toFixed(b*100000) + " Centimeters");
       } else if (var1 == 7 && var2 == 6) {
           document.getElementById("udVal").value = (toFixed(b*1000) + " Meters");
       } else if (var1 == 7 && var2 == 7) {
